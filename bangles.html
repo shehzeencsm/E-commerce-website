@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShineCraft Jewels</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+       html { scroll-behavior: smooth; }
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .font-serif {
+      font-family: "Playfair Display", serif;
+    }
+
+    .hero-slide {
+      animation: fade 1.5s ease-in-out;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-[#f7e2af]">
+
+ 
+  <header class="bg-[#d4a437] py-4 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-4">
+
+
+      <div class="flex items-center space-x-3">
+        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md">
+          <span class="text-[#d4a437] text-2xl font-bold">S</span>
+        </div>
+        <h1 class="text-3xl font-serif text-white font-thin tracking-wider">ShineCraft Jewels</h1>
+      </div>
+
+   
+      <div class="relative hidden md:block">
+        <input id="searchInput" type="text" placeholder="Search jewellery..." class="px-4 py-2 rounded-full w-72 outline-none shadow-md">
+        <div id="suggestions" class="absolute bg-white w-full mt-2 rounded-md shadow hidden"></div>
+      </div>
+
+    
+      <nav>
+        <ul class="hidden md:flex space-x-8 text-white text-[18px] font-thin">
+          <li><a href="index.html" class="hover:text-[#6e510b]">Home</a></li>
+          <li><a href="#Bangles" class="hover:text-[#6e510b]">Bangles</a></li>
+          <li><a href="index.html" class="hover:text-[#6e510b]">Necklaces</a></li>
+          <li><a href="rings.html" class="hover:text-[#6e510b]">Rings</a></li>
+          <li><a href="about.html" class="hover:text-[#6e510b]">About</a></li>
+          <li><a href="contact.html" class="hover:text-[#6e510b]">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  
+
+<section class="relative w-full h-[500px] overflow-hidden">
+
+
+  <div id="slider" class="flex h-full transition-all duration-700">
+    <img src="https://i.pinimg.com/736x/98/46/b7/9846b72747efb789f82f68ff05c872f2.jpg" class="w-full h-full object-cover flex-none">
+    <img src="https://i.pinimg.com/1200x/4e/22/7d/4e227da638db2bd1e6e9cec31aef3118.jpg" class="w-full h-full object-cover flex-none">
+    <img src="bg1.jpg" class="w-full h-full object-cover flex-none">
+    <img src="bg3.jpg" class="w-full h-full object-cover flex-none">
+  </div>
+
+  
+  <button onclick="prevSlide()" class="absolute top-1/2 left-4 bg-white p-3 rounded-full shadow">❮</button>
+
+  <button onclick="nextSlide()" class="absolute top-1/2 right-4 bg-white p-3 rounded-full shadow">❯</button>
+
+  <div class="absolute top-1/3 left-10">
+    <h1 class="text-white text-5xl md:text-6xl font-serif font-thin">Shine With<br>Timeless Elegance</h1>
+    <button class="mt-6 bg-[#d4a437] px-8 py-3 text-white text-xl rounded-full  hover:bg-white hover:text-[#d4a437] transition shadow-lg">Shop Now</button>
+  </div>
+</section>
+
+  
+
+    <section class="p-5">
+    <h2 class="text-center text-4xl font-serif text-[#6e510b] font-thin mb-10">
+      Featured Jewellery
+    </h2>
+
+<div class="container mx-auto px-2 py-2">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    
+<!-- <div onclick="openProduct('Pineapple Zircon Big Size Ring', '799', 'gb12.jpg', 'Adjustable | Premium Quality')" ></div>
+    <div class=" rounded-xl hover:shadow-lg transition p-3 relative"> -->
+      <!-- <div onclick="openProduct('Pineapple Zircon Big Size Ring', '799', 'gb12.jpg', 'Adjustable | Premium Quality')" 
+     class="rounded-xl hover:shadow-lg transition p-3 relative cursor-pointer">
+
+      <button onclick="event.stopPropagation(); toggleWish(this)" class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+       
+      <img src="gb12.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+
+      <h3 class="text-sm font-sans mt-2">Pineapple Zircon Big Size Ring</h3>
+      <p class="text-xs text-gray-600">Adjustable | Premium Quality</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 799</p>
+        <a href="product.html">Cart</a>
+      </div>
+    </div>
+    </div>
+    </div> -->
+<!-- <a href="product1.html">
+
+  <div class="rounded-xl hover:shadow-lg transition p-3 relative ">
+    <button onclick="toggleWish(this); event.stopPropagation();" 
+            class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+  
+    <img src="gb8.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+  
+    <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+    <p class="text-xs text-gray-600">Premium Quality</p>
+    <p class="text-red-600 font-semibold">Rs. 1,199</p>
+  </div>
+</a> -->
+    
+<!-- <div onclick="openProduct('Egyptian Big Size Adjustable Ring', '1199', 'gb8.jpg', 'Premium Quality')" 
+     class="rounded-xl hover:shadow-lg transition p-3 relative cursor-pointer">
+  <button onclick="toggleWish(this); event.stopPropagation();" 
+          class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+
+  <img src="gb8.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+
+  <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+  <p class="text-xs text-gray-600">Premium Quality</p>
+  <p class="text-red-600 font-semibold">Rs. 1,199</p>
+</div> -->
+
+
+<div class="rounded-xl hover:shadow-lg transition p-3 relative cursor-pointer">
+  <button onclick="toggleWish(this); event.stopPropagation();" 
+          class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+
+  <img src="gb12.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+
+  <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+  <p class="text-xs text-gray-600">Premium Quality</p>
+  <p class="text-red-600 font-semibold">Rs. 1,199</p>
+  <button src="product1.html">Click here</button>
+</div>
+
+
+    
+    <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      
+      <button onclick=" toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+       
+      <img src="gb8.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick=" toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb9.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick="  toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb2.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick=" toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb11.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick="  toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb12.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick=" toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb5.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick=" toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick=" toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb4.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick=" toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb3.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick="  toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb1.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative">
+      <button onclick="  toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="gb2.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Big Size Adjustable Ring</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-red-600 font-semibold">Rs. 1,199</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+   
+  
+ 
+  <div id="overlay" class="fixed inset-0 z-40 hidden bg-black/30"></div>
+
+
+
+ 
+  <footer class="bg-[#1f1e1b] text-gray-300 pt-12 pb-6 mt-16">
+
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+    
+    <div>
+      <h2 class="text-2xl font-serif text-[#d4a437] mb-3">ShineCraft Jewels</h2>
+      <p class="text-sm leading-6">
+        Premium handcrafted jewellery made with elegance and love.  
+        Explore our rings, bangles, necklaces & bridal collections.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold text-[#d4a437] mb-3">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="bangles.html" class="hover:text-white transition">Home</a></li>
+        <li><a href="rings.html" class="hover:text-white transition">Rings</a></li>
+        <li><a href="necklace.html" class="hover:text-white transition">Necklaces</a></li>
+        <li><a href="index.html" class="hover:text-white transition">Bangles</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold text-[#d4a437] mb-3">Customer Service</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white transition">Return Policy</a></li>
+        <li><a href="#" class="hover:text-white transition">Shipping Info</a></li>
+        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white transition">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-semibold text-[#d4a437] mb-3">Contact Us</h3>
+      <p>Email: support@shinecraft.com</p>
+      <p>Phone: +92 300 1234567</p>
+
+      <div class="flex space-x-4 mt-4">
+        <a href="#" class="text-[#d4a437] text-2xl hover:text-white transition">📘</a>
+        <a href="#" class="text-[#d4a437] text-2xl hover:text-white transition">📸</a>
+        <a href="#" class="text-[#d4a437] text-2xl hover:text-white transition">▶️</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center text-gray-400 text-sm mt-10 border-t border-gray-700 pt-4">
+    © 2025 ShineCraft Jewels. All rights reserved.
+  </div>
+</footer>
+
+
+
+
+
+
+  
+
+<script>
+
+
+// function openProduct(title, price, img, desc) {
+//   window.location.href =
+//    `product1.html?title=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}&img=${encodeURIComponent(img)}&desc=${encodeURIComponent(desc)}`;
+// };
+
+// function openProduct(title, price, img, desc) {
+//   window.location.href =
+//     `product1.html?title=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}&img=${encodeURIComponent(img)}&desc=${encodeURIComponent(desc)}`;
+// }
+
+</script>
+
+</body>
+
+</html>
+

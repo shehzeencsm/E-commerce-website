@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShineCraft Jewels</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .font-serif {
+      font-family: "Playfair Display", serif;
+    }
+
+    .hero-slide {
+      animation: fade 1.5s ease-in-out;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0.4;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  </style>
+
+
+
+
+</head>
+
+<body class="bg-[#f7e2af]">
+
+  <header class="bg-[#d4a437] shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+
+      <!-- Logo + Title -->
+      <div class="flex items-center space-x-3">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-white to-yellow-100 rounded-full flex items-center justify-center shadow-xl border border-white/50">
+          <span class="text-[#57400a] text-3xl font-serif font-bold tracking-wide">SBJ</span>
+        </div>
+
+        <h1 class="text-2xl md:text-3xl font-serif text-white tracking-widest drop-shadow-md">
+          SAPPHIRE BANGLES & JEWELS
+        </h1>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-8 text-white text-lg font-light tracking-wide">
+          <li><a href="bangle index.html" class="hover:text-[#f5e6b3] transition duration-300">Home</a></li>
+          <li><a href="bangle index.html" class="hover:text-[#f5e6b3] transition duration-300">Bangles</a></li>
+          <li><a href="necklace.html" class="hover:text-[#f5e6b3] transition duration-300">Necklaces</a></li>
+          <li><a href="rings.html" class="hover:text-[#f5e6b3] transition duration-300">Rings</a></li>
+          <li><a href="about.html" class="hover:text-[#f5e6b3] transition duration-300">About</a></li>
+          <li><a href="contact.html" class="hover:text-[#f5e6b3] transition duration-300">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-white text-4xl focus:outline-none">
+        ☰
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#b8892f] py-4">
+      <ul class="flex flex-col space-y-4 text-white text-lg text-center">
+        <li><a href="bangle index.html" class="hover:text-[#f5e6b3]">Home</a></li>
+        <li><a href="bangle index.html" class="hover:text-[#f5e6b3]">Bangles</a></li>
+        <li><a href="necklace.html" class="hover:text-[#f5e6b3]">Necklaces</a></li>
+        <li><a href="rings.html" class="hover:text-[#f5e6b3]">Rings</a></li>
+        <li><a href="about.html" class="hover:text-[#f5e6b3]">About</a></li>
+        <li><a href="contact.html" class="hover:text-[#f5e6b3]">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <div class="w-full h-[600px] overflow-hidden relative">
+    <div id="slider" class="flex h-full transition-all duration-700">
+      <img src="new1.jpg" class="w-full h-full object-cover flex-none">
+      <img src="new3.jpg" class="w-full h-full object-cover flex-none">
+      <img src="nb.jpg" class="w-full h-full object-cover flex-none">
+      <img src="rg2.jpg" class="w-full h-full object-cover flex-none">
+    </div>
+  </div>
+
+  <div class="absolute top-1/3 left-10">
+
+    <h1 class="text-white text-5xl md:text-6xl font-serif font-thin">Shine With<br>Timeless Elegance</h1>
+
+
+    <button onclick="scrollToFeatured()"
+      class="mt-28 bg-[#d4a437] px-8 py-3 text-white text-xl rounded-full  hover:bg-white hover:text-[#d4a437] transition shadow-lg">Explore
+      More</button>
+
+  </div>
+
+
+  </section>
+
+
+
+  <style>
+    /* Scroll Animation Base */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px) scale(0.95);
+      transition: all 0.8s ease-out;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Stagger Animation Delay */
+    .reveal:nth-child(1) {
+      transition-delay: 0.1s;
+    }
+
+    .reveal:nth-child(2) {
+      transition-delay: 0.2s;
+    }
+
+    .reveal:nth-child(3) {
+      transition-delay: 0.3s;
+    }
+
+    .reveal:nth-child(4) {
+      transition-delay: 0.4s;
+    }
+
+    .reveal:nth-child(5) {
+      transition-delay: 0.5s;
+    }
+
+    .reveal:nth-child(6) {
+      transition-delay: 0.6s;
+    }
+
+    .reveal:nth-child(7) {
+      transition-delay: 0.7s;
+    }
+
+    .reveal:nth-child(8) {
+      transition-delay: 0.8s;
+    }
+
+    .reveal:nth-child(9) {
+      transition-delay: 0.9s;
+    }
+
+    .reveal:nth-child(10) {
+      transition-delay: 0.9s;
+    }
+
+    .reveal:nth-child(11) {
+      transition-delay: 0.9s;
+    }
+
+    .reveal:nth-child(12) {
+      transition-delay: 0.9s;
+    }
+  </style>
+
+  </head>
+
+  <body class="bg-white">
+
+    <section class="p-5" id="featured">
+
+      <h2 class="text-center text-4xl font-serif text-[#6e510b] font-thin mb-10">
+        Featured Jewellery
+      </h2>
+
+      <div class="container mx-auto px-2 py-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+          <!-- CARD 1 -->
+          <a href="bcard1.php">
+            <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+              <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+              <img src="gb9.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+              <h3 class="text-lg font-sans mt-2">Red Adjustable design</h3>
+              <p class="text-xs text-gray-600">Premium | Quality bangles</p>
+              <div class="flex gap-3 items-center mt-1">
+                <p class="text-red-600 font-semibold">Rs.1,200</p>
+                <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                  Click Here
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <!-- CARD 2 -->
+          <a href="bcard2.php">
+            <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+              <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+              <img src="gb8.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+              <h3 class="text-lg font-sans mt-2">Adjustable multiple Bangles</h3>
+              <p class="text-xs text-gray-600">Premium | Quality</p>
+              <div class="flex gap-3 items-center mt-1">
+                <p class="text-red-600 font-semibold">Rs. 3,200</p>
+                <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                  Click Here
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <!-- CARD 3 -->
+          <a href="bcard3.php">
+            <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+              <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+              <img src="gb12.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+              <h3 class="text-lg font-sans mt-2">Multiple Colors</h3>
+              <p class="text-xs text-gray-600">Premium | Quality</p>
+              <div class="flex gap-3 items-center mt-1">
+                <p class="text-red-600 font-semibold">Rs. 1,509</p>
+                <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                  Click Here
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <!-- CARD 4 -->
+          <a href="bcard4.php">
+            <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+              <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+              <img src="a5.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+              <h3 class="text-lg font-sans mt-2">Green tousal Bangles</h3>
+              <p class="text-xs text-gray-600">Premium | Quality</p>
+              <div class="flex gap-3 items-center mt-1">
+                <p class="text-red-600 font-semibold">Rs. 1,299</p>
+                <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                  Click Here
+                </button>
+              </div>
+            </div>
+          </a>
+
+          <!-- CARD 5 -->
+          <a href="bcard5.php">
+            <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+              <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+              <img src="gb2.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+              <h3 class="text-lg font-sans mt-2">Banarasi Glass Churi</h3>
+              <p class="text-xs text-gray-600">Premium | Quality</p>
+              <div class="flex gap-3 items-center mt-1">
+                <p class="text-red-600 font-semibold">Rs. 1,199</p>
+                <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                  Click Here
+                </button>
+              </div>
+            </div>
+          </a>
+
+
+          <!-- CARD 6 -->
+          <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+            <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+            <img src="gb.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+            <h3 class="text-lg font-sans mt-2">Glitter Touch Glass</h3>
+            <p class="text-xs text-gray-600">Premium | Quality</p>
+            <div class="flex gap-3 items-center mt-1">
+              <p class="text-red-600 font-semibold">Rs. 1,899</p>
+              <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                Click Here
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 7 -->
+          <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+            <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+            <img src="gb11.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+            <h3 class="text-lg font-sans mt-2">Royal Glass Collection</h3>
+            <p class="text-xs text-gray-600">Premium | Quality</p>
+            <div class="flex gap-3 items-center mt-1">
+              <p class="text-red-600 font-semibold">Rs. 1,999</p>
+              <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                Click Here
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 8 -->
+          <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+            <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+            <img src="gb5.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+            <h3 class="text-lg font-sans mt-2">Signature Glass Churi Series</h3>
+            <p class="text-xs text-gray-600">Premium | Quality</p>
+            <div class="flex gap-3 items-center mt-1">
+              <p class="text-red-600 font-semibold">Rs. 1,230</p>
+              <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                Click Here
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 9 -->
+          <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+            <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+            <img src="bgg.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+            <h3 class="text-lg font-sans mt-2">Shinny Black</h3>
+            <p class="text-xs text-gray-600">Premium | Quality</p>
+            <div class="flex gap-3 items-center mt-1">
+              <p class="text-red-600 font-semibold">Rs. 1,600</p>
+              <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                Click Here
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 10 -->
+          <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+            <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+            <img src="gb.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+            <h3 class="text-lg font-sans mt-2">Elegant Glass Set</h3>
+            <p class="text-xs text-gray-600">Premium | Quality</p>
+            <div class="flex gap-3 items-center mt-1">
+              <p class="text-red-600 font-semibold">Rs. 1,550</p>
+              <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                Click Here
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 11 -->
+          <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+            <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+            <img src="gb1.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+            <h3 class="text-lg font-sans mt-2">Color Pop Bangles</h3>
+            <p class="text-xs text-gray-600">Premium | Quality</p>
+            <div class="flex gap-3 items-center mt-1">
+              <p class="text-red-600 font-semibold">Rs. 2,200</p>
+              <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                Click Here
+              </button>
+            </div>
+          </div>
+
+          <!-- CARD 12 -->
+          <div class="rounded-xl hover:shadow-lg transition p-3 relative reveal">
+            <button class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+            <img src="gb4.jpg" class="rounded-lg w-full h-72 object-cover hover:scale-105 transition">
+            <h3 class="text-lg font-sans mt-2">Classic Glass Duo</h3>
+            <p class="text-xs text-gray-600">Premium | Quality</p>
+            <div class="flex gap-3 items-center mt-1">
+              <p class="text-red-600 font-semibold">Rs. 1,750</p>
+              <button class="px-3 py-1 bg-[#d4a437] text-white rounded hover:bg-gray-800 transition">
+                Click Here
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <script>
+
+      // Scroll Animation Trigger
+      function revealOnScroll() {
+        let reveals = document.querySelectorAll(".reveal");
+
+        reveals.forEach((item) => {
+          let windowHeight = window.innerHeight;
+          let revealTop = item.getBoundingClientRect().top;
+
+          if (revealTop < windowHeight - 80) {
+            item.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+    </script>
+
+    <div id="overlay" class="fixed inset-0 z-40 hidden bg-black/30"></div>
+    <footer class="bg-[#1f1e1b] text-gray-300 pt-12 pb-6 mt-16">
+
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+
+        <div>
+          <h2 class="text-2xl font-serif text-[#d4a437] mb-3">SapphireBangles & Jewels</h2>
+          <p class="text-sm leading-6">
+            Premium handcrafted jewellery made with elegance and love.
+            Explore our rings, bangles, necklaces & bridal collections.
+          </p>
+        </div>
+        `
+        <div>
+          <h3 class="text-xl font-semibold text-[#d4a437] mb-3">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="bangle index.html" class="hover:text-white transition">Home</a></li>
+
+            <li><a href="necklace.html" class="hover:text-white transition">Necklaces</a></li>
+            <li><a href="rings.html" class="hover:text-white transition">Rings</a></li>
+            <li><a href="bangle index.html" class="hover:text-white transition">Bangles</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div>
+          <h3 class="text-xl font-semibold text-[#d4a437] mb-3">Customer Service</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition">Return Policy</a></li>
+            <li><a href="#" class="hover:text-white transition">Shipping Info</a></li>
+            <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-white transition">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-xl font-semibold text-[#d4a437] mb-3">Contact Us</h3>
+          <p>Email: support@shinecraft.com</p>
+          <p>Phone: +92 300 1234567</p>
+
+          <!-- Social Icons -->
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-[#d4a437] text-2xl hover:text-white transition">📘</a>
+            <a href="#" class="text-[#d4a437] text-2xl hover:text-white transition">📸</a>
+            <a href="#" class="text-[#d4a437] text-2xl hover:text-white transition">▶️</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center text-gray-400 text-sm mt-10 border-t border-gray-700 pt-4">
+        © 2025 ShineCraft Jewels. All rights reserved.
+      </div>
+    </footer>
+
+
+    <script>
+      function openProduct(title, price, img, desc) {
+        // Product page par URL parameters bhejna
+        window.location.href = `bcard2.php?title=${encodeURIComponent(title)}&price=${encodeURIComponent(price)}&img=${encodeURIComponent(img)}&desc=${encodeURIComponent(desc)}`;
+      }
+
+      function scrollToFeatured() {
+        document.getElementById("featured").scrollIntoView({
+          behavior: "smooth"
+        });
+      }
+
+
+
+      let slideIndex = 0;
+      const slider = document.getElementById("slider");
+      const slides = slider.children;
+      const totalSlides = slides.length;
+
+      function moveSlider() {
+        slideIndex++;
+        if (slideIndex === totalSlides) slideIndex = 0;
+
+        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+
+      setInterval(moveSlider, 2000);
+
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+
+
+    </script>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+
+   <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3, .serif {
+      font-family: 'Playfair Display', serif;
+    }
+
+      @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px); 
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeInUp 1.2s ease-in-out forwards;
+    }
+
+    /* @keyframes bounceText {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  } */
+
+   /* .animate-bounceText {
+    animation: bounceText 0.8s ease-in-out infinite;
+  }
+  */
+
+  @keyframes fadeText {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+  }
+  .animate-fadeText {
+    animation: fadeText 2s ease-in-out infinite;
+  }
+
+  .animate-swing {
+    animation: swing 1s ease-in-out infinite;
+  }
+
+
+   .animate-fadeText {
+    animation: fadeText 2s ease-in-out infinite;
+  }
+
+  </style>
+</head>
+<body class="bg-orange-100">
+  <header>
+    <nav class="  pl-10 flex justify-between h-20 pt-5 pr-5 space-x-4 text-white bg-yellow-900 font-extralight" >
+      <div class=" flex pl-10 space-x-2 text-4xl">
+        <h1 >Cafe</h1>
+        </div>
+        <ul class="space-x-2">
+          <a class="text-white transition duration-300 hover:text-amber-900" href="#">HOME</a>
+          <a class="text-white transition duration-300 hover:text-amber-900" href="#">MENU</a>
+          <a class="text-white transition duration-300 hover:text-amber-900" href="#">CONTACT</a>
+
+        </ul>
+      
+    </nav>
+    <div class="bg-[url('coffee1.jpeg')] h-[400px] bg-no-repeat m-5 rounded-2xl bg-cover bg-center">
+      <div class="justify-center p-2 pl-20 text-4xl font-bold text-white pt-36 fade-in"style="animation-delay: 0s;">
+        <h1>Savor The Perfect</h1>
+        <h1>Brew!</h1>
+        <p><span class="text-sm font-light text-shadow-gray-400">Coffee isn't just a drink it's a moment of peace in a busy day</span></p>
+        <br>
+         <button class="h-[46px] w-32 animate-fadeText bg-amber-600 pb-10 rounded-2xl"><span class="text-2xl text-white font-extrabold">Order Now</span></button>
+
+      </div>
+    </div>
+  </header>
+  <div>
+    <h1 class="p-10 bp-16 text-4xl font-bold text-center animate-fadeText text-amber-950 ">Features</h1>
+    <div class="flex space-x-52">
+      <div class="w-64 pr-5 border-r-2 border-orange-900 h-50">
+        <img class="animate-bounce h-24 pl-[75px] rounded-4xl"src="icon1.png" alt="icon">
+        <h1 class="text-2xl font-bold text-center text-amber-950">Eapresso</h1>
+        <p class="text-sm text-center font-extralight text-amber-950">Eapresso is the base of many popular drinks like cappuccino,latte,and macchiato</p>
+      </div>
+
+      <div class="w-64 pr-5 border-r-2 border-orange-800 h-50">
+        <img class="h-24 animate-bounce pl-[75px]"src="icon2.png" alt="icon">
+        <h1 class="text-2xl font-bold text-center text-amber-950">Latte</h1>
+        <p class="text-sm text-center font-extralight text-amber-950">Eapresso is the base of many popular drinks like cappuccino,latte,and macchiato </p>
+
+      </div>
+
+      <div class="w-64 pr-5 border-r-2 border-orange-800 h-50">
+        <img class="h-24 fade-in pl-[75px] fadeText" style="animation-delay: 0s;" src="icon3.png" alt="icon">
+        <h1 class="text-2xl font-bold text-center text-amber-950">Cold Brew</h1>
+        <p class="text-sm text-center font-extralight text-amber-950">Eapresso is the base of many popular drinks like cappuccino,latte,and macchiato </p>
+
+      </div>
+
+      
+
+      
+
+      <div>
+
+      </div>
+
+</body>
+</html>

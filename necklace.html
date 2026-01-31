@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Necklaces – ShineCraft Jewels</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .font-serif {
+      font-family: "Playfair Display", serif;
+    }
+  </style>
+</head>
+
+<body class="bg-[#f9eac5]">
+<style>
+/* .reveal {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+} */
+
+
+  /* ✨ Fade + Scale Animation */
+    .reveal {
+      opacity: 0;
+      transform: scale(0.85);
+      transition: all 0.8s ease-out;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: scale(1);
+    } 
+
+</style>                
+
+
+
+  <header class="bg-[#d4a437] py-4 shadow-lg">
+    <div class="container mx-auto flex items-center justify-between px-4">
+      <div class="flex items-center space-x-3">
+        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md">
+          <span class="text-[#57400a] text-3xl font-serif">SBJ</span>
+        </div>
+        <h1 class="text-4xl font-serif text-white font-thin tracking-wider">SAPPHIRE BANGLES & JEWELS</h1>
+      </div>
+
+      <nav>
+        <ul class="hidden md:flex space-x-8 text-white text-lg font-medium">
+          <li><a href="bangle index.html" class="hover:text-[#6e510b]">Home</a></li>
+          <li><a href="bangle index.html" class="hover:text-[#6e510b]">Bangles</a></li>
+          <li><a href="#" class="hover:text-[#6e510b] underline">Necklaces</a></li>
+          <li><a href="rings.html" class="hover:text-[#6e510b]">Rings</a></li>
+          <li><a href="about.html" class="hover:text-[#6e510b]">About</a></li>
+          <li><a href="contact.html" class="hover:text-[#6e510b]">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ </section>
+ 
+  <section class="mt-6 text-center">
+    <h2 class="text-4xl font-serif font-bold text-[#6e510b]">Necklace Collection</h2>
+    <p class=" mt-2">Discover elegance crafted with premium artistry</p>
+
+     <button onclick="scrollToFeatured()" class="mt-6 bg-[#d4a437] px-8 py-3 text-white text-xl rounded-full hover:bg-white hover:text-[#d4a437] transition shadow-lg">
+      Explore More
+    </button>
+  </section>
+
+
+  <section class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-4 mt-10">
+
+<!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"> -->
+<div class="md:col-span-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- CARD 1 -->
+<a href="nkp2.php">
+       <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk12.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Black Pearl</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 50,699</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+</a>
+ <!-- CARD 2 -->
+<a href="nkp3.php">
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk11.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">White Crystal</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 40,500</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">Click Here    </button>
+      </div>
+    </div>
+</a>
+
+
+ <!-- CARD 3 -->
+<a href="nkp4.php">
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk10.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Aurora Shine Necklace</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 111,199</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+    </a>
+
+
+     <!-- CARD 4-->
+    <a href="nkp5.php">
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk9.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Empress Glow Necklace</h3>
+      <p class="text-xs text-gray-600">Royal & Timeless Look</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 101,199</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+    </a>
+
+
+
+
+
+ <!-- CARD 5 -->
+   <a href="nkp6.php">
+       <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk13.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Sparkling Diamond Shine</h3>
+      <p class="text-xs text-gray-600">Delicate Premium Detailing</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 100,999</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+    </a>
+
+
+    <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk1.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Gold Pandent</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 150,750</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+
+
+     <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk2.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Mystic Gold Loop</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 150,199</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+   
+
+
+    <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk3.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">CrownLine Necklace</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 170,699</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+
+
+
+    <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk4.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Nova Dot Necklace</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 120,450</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+
+
+<div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk5.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Tiny Spart Gold</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 90,599</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+
+ <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk14.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Egyptian Elegant curve Necklace</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 145,999</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+
+
+
+    
+    <div class=" rounded-xl hover:shadow-lg transition p-3 relative reveal">
+      <button onclick="toggleWish(this)"class="absolute right-3 top-3 text-gray-500 hover:text-red-500 text-2xl">♡</button>
+      <img src="nk7.jpg" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+      <h3 class="text-sm font-sans mt-2">Classic Round Halo</h3>
+      <p class="text-xs text-gray-600">Doublet Stone | Premium</p>
+      <div class="flex gap-3 items-center mt-1">
+        <p class="text-[#6e510b] font-semibold">Rs. 156,759</p>
+        <button onclick="window.location.href='product1.html'" 
+            class="px-3 py-1 bg-black text-white rounded hover:bg-gray-800 transition">
+      Click Here
+    </button>
+      </div>
+    </div>
+    
+
+    
+    
+   
+
+
+    
+
+    
+       
+
+     
+
+
+
+
+  </section>
+
+ <footer class="bg-[#1f1e1b] text-gray-300 pt-12 pb-6 mt-16">
+
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+
+    <div>
+      <h2 class="text-2xl font-serif text-[#d4a437] mb-3">SAPPHIRE BANGLES & JEWELS</h2>
+      <p class="text-sm leading-6">
+        Premium handcrafted jewellery made with elegance and love.  
+        Explore our rings, bangles, necklaces & bridal collections.
+      </p>
+    </div>
+
+
+    <div>
+      <h3 class="text-xl font-semibold text-[#d4a437] mb-3">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="bangle index.html" class="hover:text-white transition">Home</a></li>
+        <li><a href="rings.html" class="hover:text-white transition">Rings</a></li>
+        <li><a href="necklace.html" class="hover:text-white transition">Necklaces</a></li>
+        <li><a href="bangle index.html" class="hover:text-white transition">Bangles</a></li>
+          <li><a href="about.html" class="hover:text-[#6e510b]">About</a></li>
+      </ul>
+    </div>
+
+ 
+    <div>
+      <h3 class="text-xl font-semibold text-[#d4a437] mb-3">Customer Service</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white transition">Return Policy</a></li>
+        <li><a href="#" class="hover:text-white transition">Shipping Info</a></li>
+        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white transition">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+
+    <div>
+      <h3 class="text-xl font-semibold text-[#d4a437] mb-3">Contact Us</h3>
+      <p>Email: support@shinecraft.com</p>
+      <p>Phone: +92 300 1234567</p>
+
+   
+      <div class="flex space-x-4 mt-4">
+        <a href="#" class="text-[#d4a437] text-2xl hover:text-white transition">📘</a>
+        <a href="#" class="text-[#d4a437] text-2xl hover:text-white transition">📸</a>
+        <a href="#" class="text-[#d4a437] text-2xl hover:text-white transition">▶️</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="text-center text-gray-400 text-sm mt-10 border-t border-gray-700 pt-4">
+    © 2025 ShineCraft Jewels. All rights reserved.
+  </div>
+</footer>
+
+
+  <script>
+function openProductPage(img, title, price) {
+    let url = `product.html?img=${img}&title=${title}&price=${price}`;
+    window.location.href = url;  
+}
+
+
+
+    function scrollToFeatured() {
+      document.getElementById("featured").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+    /* ✨ Reveal Animation Script */
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+      reveals.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 80) {
+          el.classList.add("show");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+ 
+</script>
+
+
+</body>
+
+</html>
